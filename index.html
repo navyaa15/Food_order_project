@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Simple Food Order</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- ✅ Updated path -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header><h1>Hostel Mart</h1></header>
+
+    <main>
+      <section id="menu" class="card">
+        <h2>Menu</h2>
+        <div id="items"></div>
+      </section>
+
+      <section id="cart" class="card">
+        <h2>Cart</h2>
+        <div id="cart-items">Cart is empty</div>
+        <div class="total">Total: ₹<span id="total">0</span></div>
+        <button id="checkoutBtn">Checkout</button>
+      </section>
+
+      <section id="checkout" class="card hidden">
+        <h2>Checkout (COD only)</h2>
+        <label>Name <input id="name" /></label>
+        <label>Phone <input id="phone" /></label>
+        <label>Address <textarea id="address"></textarea></label>
+        <div class="total">Order Total: ₹<span id="checkout-total">0</span></div>
+        <button id="placeOrderBtn">Place Order (COD)</button>
+        <button id="cancelBtn">Cancel</button>
+      </section>
+
+      <section id="msg" class="card hidden"></section>
+    </main>
+  </div>
+
+  <!-- ✅ Updated path -->
+  <script src="script.js"></script>
+</body>
+</html>
